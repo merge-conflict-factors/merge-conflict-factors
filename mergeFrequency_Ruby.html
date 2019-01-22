@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Understanding Predictive Factors for Merge Conflicts</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  </head>
+  <body style="font-family:verdana;">
+    <header>
+      <div class="top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <p>Understanding Predictive Factors for Merge Conflicts</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+            <ul class="nav navbar-nav main-navbar-nav">
+                <li class="active"><a href="main.html" title="">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Evaluation Results <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rq1-results.html" title="">RQ1: What is the effect of contribution modularity on merge conflicts?</a></li>
+                        <li><a href="rq2-results.html" title="">RQ2: What is the effect of contribution size on merge conflicts?</a></li>
+                        <li><a href="rq3-results.html" title="">RQ3: What is the effect of contribution timing on merge conflicts?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sample project list<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <!--<li><a href="sample_Ruby.html" title="">Ruby sample</a></li>-->
+                        <li><a href="sample_Python.html" title="">Python sample</a></li>                            
+                    </ul>
+                </li>               
+                <!--<li><a href="sample.html" title="">Sample project list</a></li>-->
+            </ul>                           
+        </div>        
+      </div>
+    </nav>
+    </header>
+    <div class="bread_area">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  <ol class="breadcrumb">
+                      <li><a href="main.html">Home</a></li>
+                      <li class="active">Sample project list and characteristics</li>
+                  </ol>                    
+              </div>
+          </div>
+      </div>
+    </div>
+    <main class="site-main page-main">
+        <div class="container">
+            <div class="row">
+                <section class="page col-sm-9">
+                  <h3>Ruby Sample</h3>
+				  <br>
+                    <table class="build_conflicts">
+                      <thead>
+                        <tr>
+                          <th> Git Repository </th>
+                          <th> # Merge Scenarios </th>
+                          <th> % Conflicting Merge Scenarios </th>
+                          <!--<th> # Merge Commits </th>-->                           
+                        </tr>
+                      </thded>
+                      <tbody>
+                            <tr>
+                                <td><a href="https://github.com/24pullrequests/24pullrequests" target="_blank">24pullrequests/24pullrequests</a></td>
+                                <td>504</td>
+                                <td>10.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/AgileVentures/WebsiteOne" target="_blank">AgileVentures/WebsiteOne</a></td>
+                                <td>506</td>
+                                <td>24.5</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/alphagov/whitehall" target="_blank">alphagov/whitehall</a></td>
+                                <td>2701</td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/annict/annict" target="_blank">annict/annict</a></td>
+                                <td>327</td>
+                                <td>15.6</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/appelier/bigtuna" target="_blank">appelier/bigtuna</a></td>
+                                <td>57</td>
+                                <td>28.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/asciinema/asciinema.org" target="_blank">asciinema/asciinema.org</a></td>
+                                <td>22</td>
+                                <td>31.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/asm-helpful/helpful-web" target="_blank">asm-helpful/helpful-web</a>
+                                <td>220</td>
+                                <td>17.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/atmos/slash-heroku" target="_blank">atmos/slash-heroku</a></td>
+                                <td>9</td>
+                                <td>33.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/benwbrum/fromthepage" target="_blank">benwbrum/fromthepage</a></td>
+                                <td>409</td>
+                                <td>16.9</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/bikeindex/bike_index" target="_blank">bikeindex/bike_index</a></td>
+                                <td>76</td>
+                                <td>13.2</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/bloomberg/cartodb" target="_blank">bloomberg/cartodb</a></td>
+                                <td>7186</td>
+                                <td>16.5</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/browsermedia/browsercms" target="_blank">browsermedia/browsercms</a></td>
+                                <td>97</td>
+                                <td>23.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/huginn/huginn" target="_blank">huginn/huginn</a></td>
+                                <td>505</td>
+                                <td>10.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/catarse/catarse" target="_blank">catarse/catarse</a></td>
+                                <td>2608</td>
+                                <td>10.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/churchio/onebody" target="_blank">churchio/onebody</a></td>
+                                <td>181</td>
+                                <td>17.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/codefirst/AsakusaSatellite" target="_blank">codefirst/AsakusaSatellite</a></td>
+                                <td>34</td>
+                                <td>8.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/comfy/comfortable-mexican-sofa" target="_blank">comfy/comfortable-mexican-sofa</a></td>
+                                <td>177</td>
+                                <td>18.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/consul/consul" target="_blank">consul/consul</a></td>
+                                <td>1009</td>
+                                <td>19.0</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/askaway/askaway" target="_blank">askaway/askaway</a></td>
+                                <td>147</td>
+                                <td>19.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/coreinfrastructure/best-practices-badge" target="_blank">coreinfrastructure/best-practices-badge</a></td>
+                                <td>144</td>
+                                <td>14.6</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/discourse/discourse" target="_blank">discourse/discourse</a></td>
+                                <td>2937</td>
+                                <td>1.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/edavis10/redmine-timesheet-plugin" target="_blank">edavis10/redmine-timesheet-plugin</a></td>
+                                <td>8</td>
+                                <td>12.5</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/education/classroom" target="_blank">education/classroom</a></td>
+                                <td>394</td>
+                                <td>10.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/ekylibre/ekylibre" target="_blank">ekylibre/ekylibre</a></td>
+                                <td>1507</td>
+                                <td>29.0</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/EOL/eol" target="_blank">EOL/eol</a></td>
+                                <td>1357</td>
+                                <td>18.6</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/errbit/errbit" target="_blank">errbit/errbit</a></td>
+                                <td>268</td>
+                                <td>15.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/ets-berkeley-edu/calcentral" target="_blank">ets-berkeley-edu/calcentral</a></td>
+                                <td>3447</td>
+                                <td>0.9</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/fairmondo/fairmondo" target="_blank">fairmondo/fairmondo</a></td>
+                                <td>3138</td>
+                                <td>22.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/FarmBot/Farmbot-Web-API" target="_blank">FarmBot/Farmbot-Web-API</a></td>
+                                <td>284</td>
+                                <td>15.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/fatfreecrm/fat_free_crm" target="_blank">fatfreecrm/fat_free_crm</a></td>
+                                <td>368</td>
+                                <td>14.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/feedbin/feedbin" target="_blank">feedbin/feedbin</a></td>
+                                <td>205</td>
+                                <td>12.2</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/fernandokosh/redmine_time_tracker" target="_blank">fernandokosh/redmine_time_tracker</a></td>
+                                <td>25</td>
+                                <td>20.0</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/gems-uff/sapos" target="_blank">gems-uff/sapos</a></td>
+                                <td>126</td>
+                                <td>30.2</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/glebm/rails_email_preview" target="_blank">glebm/rails_email_preview</a></td>
+								<td>5</td>
+                                <td>20.0</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/Growstuff/growstuff" target="_blank">Growstuff/growstuff</a></td>
+                                <td>714</td>
+                                <td>18.6</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/HabitatMap/AirCasting" target="_blank">HabitatMap/AirCasting</a></td>
+                                <td>29</td>
+                                <td>10.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/hashrocket/hr-til" target="_blank">hashrocket/hr-til</a></td>
+                                <td>38</td>
+                                <td>5.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/helpyio/helpy" target="_blank">helpyio/helpy</a></td>
+                                <td>360</td>
+                                <td>18.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/hitobito/hitobito" target="_blank">hitobito/hitobito</a></td>
+                                <td>301</td>
+                                <td>16.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/inaturalist/inaturalist" target="_blank">inaturalist/inaturalist</a></td>
+                                <td>831</td>
+                                <td>29.5</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/instructure/canvas-lms" target="_blank">instructure/canvas-lms</a></td>
+                                <td>173</td>
+                                <td>19.1</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://github.com/gitlabhq/gitlab-contributors" target="_blank">gitlabhq/gitlab-contributors</a></td>
+                                <td>7</td>
+                                <td>14.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/Jellyfishboy/trado" target="_blank">Jellyfishboy/trado</a></td>
+                                <td>95</td>
+                                <td>35.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/jgraichen/redmine_dashboard" target="_blank">jgraichen/redmine_dashboard</a></td>
+								<td>22</td>
+                                <td>54.5</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/jsqu99/spree_flexi_variants" target="_blank">jsqu99/spree_flexi_variants</a></td>
+								<td>29</td>
+                                <td>13.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/Katello/katello" target="_blank">Katello/katello</a></td>
+                                <td>3945</td>
+                                <td>7.6</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/librariesio/libraries.io" target="_blank">librariesio/libraries.io</a></td>
+                                <td>115</td>
+                                <td>25.2</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/linuxfoundation/cii-best-practices-badge" target="_blank">linuxfoundation/cii-best-practices-badge</a></td>
+                                <td>144</td>
+                                <td>14.6</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/loomio/loomio" target="_blank">loomio/loomio</a></td>
+                                <td>2305</td>
+                                <td>14.6</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/lynndylanhurley/devise_token_auth" target="_blank">lynndylanhurley/devise_token_auth</a></td>
+                                <td>120</td>
+                                <td>5.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/mephistorb/mephisto" target="_blank">mephistorb/mephisto</a></td>
+                                <td>22</td>
+                                <td>4.5</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/mumuki/mumuki-laboratory" target="_blank">mumuki/mumuki-laboratory</a></td>
+                                <td>85</td>
+                                <td>7.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/mysociety/alaveteli" target="_blank">mysociety/alaveteli</a></td>
+                                <td>1341</td>
+                                <td>16.5</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/nasa/earthdata-search" target="_blank">nasa/earthdata-search</a></td>
+                                <td>861</td>
+                                <td>20.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/natew/obtvse" target="_blank">natew/obtvse</a></td>
+                                <td>66</td>
+                                <td>28.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/Netflix/Scumblr" target="_blank">Netflix/Scumblr</a></td>
+                                <td>72</td>
+                                <td>15.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/netguru/help" target="_blank">netguru/help</a></td>
+                                <td>31</td>
+                                <td>32.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/octobox/octobox" target="_blank">octobox/octobox</a></td>
+                                <td>102</td>
+                                <td>21.6</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/openaustralia/planningalerts" target="_blank">openaustralia/planningalerts</a></td>
+                                <td>122</td>
+                                <td>22.9</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/openstreetmap/openstreetmap-website" target="_blank">openstreetmap/openstreetmap-website</a></td>
+                                <td>292</td>
+                                <td>27.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/openSUSE/osem" target="_blank">openSUSE/osem</a></td>
+                                <td>517</td>
+                                <td>2.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/opf/openproject" target="_blank">opf/openproject</a></td>
+                                <td>5655</td>
+                                <td>16.6</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/orientation/orientation" target="_blank">orientation/orientation</a></td>
+                                <td>61</td>
+                                <td>31.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/ossfriday/ossfriday" target="_blank">ossfriday/ossfriday</a></td>
+                                <td>42</td>
+                                <td>16.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/otwcode/otwarchive" target="_blank">otwcode/otwarchive</a></td>
+                                <td>2270</td>
+                                <td>10.2</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/peatio/peatio" target="_blank">peatio/peatio</a></td>
+                                <td>171</td>
+                                <td>23.4</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/pivotal/projectmonitor" target="_blank">pivotal/projectmonitor</a></td>
+                                <td>41</td>
+                                <td>9.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/pophealth/popHealth" target="_blank">pophealth/popHealth</a></td>
+                                <td>186</td>
+                                <td>24.2</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/projectblacklight/blacklight" target="_blank">projectblacklight/blacklight</a></td>
+                                <td>411</td>
+                                <td>6.6</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/publify/publify" target="_blank">publify/publify</a></td>
+                                <td>335</td>
+                                <td>9.5</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/r888888888/danbooru" target="_blank">r888888888/danbooru</a></td>
+                                <td>418</td>
+                                <td>3.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/radiant/radiant" target="_blank">radiant/radiant</a></td>
+                                <td>189</td>
+                                <td>30.2</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/rapidftr/RapidFTR" target="_blank">rapidftr/RapidFTR</a></td>
+                                <td>863</td>
+                                <td>20.9</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/rbCAS/CASino" target="_blank">rbCAS/CASino</a></td>
+                                <td>32</td>
+                                <td>9.4</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/refinery/refinerycms-news" target="_blank">refinery/refinerycms-news</a></td>
+                                <td>22</td>
+                                <td>31.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/riseuplabs/crabgrass-core" target="_blank">riseuplabs/crabgrass-core</a></td>
+                                <td>387</td>
+                                <td>8.0</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/rletters/rletters" target="_blank">rletters/rletters</a></td>
+                                <td>24</td>
+                                <td>20.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/rubygems/rubygems.org" target="_blank">rubygems/rubygems.org</a></td>
+                                <td>428</td>
+                                <td>4.9</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/rubytaiwan/ruby-taiwan" target="_blank">rubytaiwan/ruby-taiwan</a></td>
+                                <td>147</td>
+                                <td>26.5</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/scaffeinate/socify" target="_blank">scaffeinate/socify</a></td>
+                                <td>7</td>
+                                <td>14.3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/scottwillson/racing_on_rails" target="_blank">scottwillson/racing_on_rails</a></td>
+                                <td>139</td>
+                                <td>42.4</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/shakacode/react-webpack-rails-tutorial" target="_blank">shakacode/react-webpack-rails-tutorial</a></td>
+                                <td>34</td>
+                                <td>2.9</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/sharetribe/sharetribe" target="_blank">sharetribe/sharetribe</a></td>
+                                <td>1584</td>
+                                <td>9.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/Shopify/shipit-engine" target="_blank">Shopify/shipit-engine</a></td>
+                                <td>152</td>
+                                <td>1.9</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/siwapp/siwapp" target="_blank">siwapp/siwapp</a></td>
+                                <td>94</td>
+                                <td>12.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/Spokenvote/spokenvote" target="_blank">Spokenvote/spokenvote</a></td>
+                                <td>190</td>
+                                <td>16.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/spree-contrib/spree_active_shipping" target="_blank">spree-contrib/spree_active_shipping</a></td>
+								<td>14</td>
+                                <td>21.4</td>
+							</tr>
+                            <tr>
+                                <td><a href="https://github.com/square/kochiku" target="_blank">square/kochiku</a></td>
+                                <td>125</td>
+                                <td>6.4</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/SUSE/Portus" target="_blank">SUSE/Portus</a></td>
+                                <td>327</td>
+                                <td>2.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/swanson/stringer" target="_blank">swanson/stringer</a></td>
+                                <td>119</td>
+                                <td>6.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/tenex/rails-assets" target="_blank">tenex/rails-assets</a></td>
+                                <td>37</td>
+                                <td>10.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/theforeman/foreman" target="_blank">theforeman/foreman</a></td>
+                                <td>37</td>
+                                <td>10.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/thredded/thredded" target="_blank">thredded/thredded</a></td>
+                                <td>49</td>
+                                <td>2.0</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/tomatoes-app/tomatoes" target="_blank">tomatoes-app/tomatoes</a></td>
+                                <td>37</td>
+                                <td>10.8</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/tootsuite/mastodon" target="_blank">tootsuite/mastodon</a></td>
+                                <td>261</td>
+                                <td>18.4</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/TracksApp/tracks" target="_blank">TracksApp/tracks</a></td>
+                                <td>275</td>
+                                <td>9.1</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/vteams/open-source-billing" target="_blank">vteams/open-source-billing</a></td>
+                                <td>73</td>
+                                <td>38.4</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/zammad/zammad" target="_blank">zammad/zammad</a></td>
+                                <td>515</td>
+                                <td>10.7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/zendesk/samson" target="_blank">zendesk/samson</a></td>
+                                <td>1292</td>
+                                <td>2.9</td>
+                            </tr>
+
+                      </tbody>
+                     </table>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+            
+        </div>
+        </div>
+      <div id="copyright">
+            <div class="container">
+                <div class="cen">
+                    <div class="col-md-8">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script type='text/javascript' src='script.js'></script> -->
+    </body>
+  </html>
