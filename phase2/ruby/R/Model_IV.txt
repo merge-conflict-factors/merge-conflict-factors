@@ -1,0 +1,19 @@
+=============================================================
+======================================Project allProjects  -  Model IV - Modularity and Size Factors
+=============================================================
+[1] "Total merges =  61759 , % Clean merges =  86.62 , % Conflicting merges =  13.38"
+[1] "Total predictors before running GLM =  3 lista =  existsCommonSlice,numberOfAuthorsGeoAverage,numberOfChangedLinesGeoAverage"
+[1] "2  predictor(s) with p-value <= 0.05 =  existsCommonSlice,numberOfAuthorsGeoAverage"
+[1] "1  predictor(s) with p-value > 0.05 =  numberOfChangedLinesGeoAverage"
+[1] "The statistical analysis by the chi-squared test has demonstrated significant difference (p =  0 )"
+[1] "============Odds Ratio for predictors with p-value <= 0.05"
+[1] "Predictor =  existsCommonSlice , Odds Ratio =  5.18 , %Odds =  418 , p-value =  0"
+[1] "Predictor =  numberOfAuthorsGeoAverage , Odds Ratio =  1.56 , %Odds =  56 , p-value =  0"
+[1] "============Odds Ratio for predictors with p-value > 0.05"
+[1] "Predictor =  numberOfChangedLinesGeoAverage , Odds Ratio =  0.99 , %Odds =  -1 , p-value =  0.599672729979697"
+[1] "==================Model fit summary"
+[1] "AIC =  41673.8"
+[1] "Deviance of the model =  41665.8"
+[1] "Deviance Explained =  14.3"
+[1] "Chi2 =  6206.82"
+[1] "p-value =  0"

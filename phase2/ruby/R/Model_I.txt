@@ -1,0 +1,16 @@
+=============================================================
+======================================Project allProjects  -  Model I - Modularity Factor
+=============================================================
+[1] "Total merges =  61759 , % Clean merges =  86.62 , % Conflicting merges =  13.38"
+[1] "Total predictors before running GLM =  1 lista =  existsCommonSlice"
+[1] "1  predictor(s) with p-value <= 0.05 =  existsCommonSlice"
+[1] "There are no predictors with p > 0.05"
+[1] "The statistical analysis by the chi-squared test has demonstrated significant difference (p =  0 )"
+[1] "============Odds Ratio for predictors with p-value <= 0.05"
+[1] "Predictor =  existsCommonSlice , Odds Ratio =  6.13 , %Odds =  513 , p-value =  0"
+[1] "==================Model fit summary"
+[1] "AIC =  43327.87"
+[1] "Deviance of the model =  43323.87"
+[1] "Deviance Explained =  10.89"
+[1] "Chi2 =  5291.61"
+[1] "p-value =  0"

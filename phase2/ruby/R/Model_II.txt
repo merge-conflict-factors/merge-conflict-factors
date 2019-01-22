@@ -1,0 +1,17 @@
+=============================================================
+======================================Project allProjects  -  Model II - Modularity and Size Factors
+=============================================================
+[1] "Total merges =  61759 , % Clean merges =  86.62 , % Conflicting merges =  13.38"
+[1] "Total predictors before running GLM =  2 lista =  existsCommonSlice,numberOfCommitsGeoAverage"
+[1] "2  predictor(s) with p-value <= 0.05 =  existsCommonSlice,numberOfCommitsGeoAverage"
+[1] "There are no predictors with p > 0.05"
+[1] "The statistical analysis by the chi-squared test has demonstrated significant difference (p =  0 )"
+[1] "============Odds Ratio for predictors with p-value <= 0.05"
+[1] "Predictor =  existsCommonSlice , Odds Ratio =  4.28 , %Odds =  328 , p-value =  0"
+[1] "Predictor =  numberOfCommitsGeoAverage , Odds Ratio =  3.55 , %Odds =  255 , p-value =  0"
+[1] "==================Model fit summary"
+[1] "AIC =  40122.65"
+[1] "Deviance of the model =  40116.65"
+[1] "Deviance Explained =  17.49"
+[1] "Chi2 =  6403.53"
+[1] "p-value =  0"

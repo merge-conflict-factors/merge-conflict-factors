@@ -1,0 +1,10 @@
+mergeCommitID, isConflicting, existsCommonSlice, totalCommonSlices, conflictingFilesNumber, conflictsNumber, numberOfCommitsArithAverage, numberOfCommitsGeoAverage, numberOfAuthorsArithAverage, numberOfAuthorsGeoAverage, delayIntegrationArithAverage, delayIntegrationGeoAverage, deltaIntegration, minimumLifeTimeArithAverage, minimumLifeTimeGeoAverage, numberOfChangedFilesArithAverage, numberOfChangedFilesGeoAverage, numberOfChangedLinesArithAverage, numberOfChangedLinesGeoAverage, contributionConclusionDelay
+97b3e41abb3b2a75bfd97ac5d5610d70631aab29,1,1,1,2,2,29.5,26.72,1.5,1.41,1.0,1.0,0,37.0,12.0,19.0,13.86,527.0,328.61,0
+f127a5fe7eeee8b61557bbe0b72c61ca309a7ff8,0,0,0,0,0,2.0,2.0,1.0,1.0,1.0,1.0,0,1.5,1.41,6.0,6.0,65.5,62.21,0
+c6dc218630997d25d4c4ddabbda548e82ade4de5,1,1,1,1,1,8.0,7.42,1.5,1.41,1.0,1.0,0,1.0,1.0,7.5,7.48,160.5,156.06,0
+0c0de5b48ffe2b852d021ff59bc08b385b67ae3b,1,0,0,1,1,8.5,8.49,1.5,1.41,1.0,1.0,0,1.0,1.0,7.5,7.48,273.5,258.09,0
+44fe6537f7de491fee969d71fbc134da7570de41,0,0,0,0,0,5.5,4.9,1.5,1.41,1.0,1.0,0,1.0,1.0,5.5,5.48,209.0,168.24,0
+88a1300bcfef54fa7298425d25d43eb44588d543,0,0,0,0,0,3.5,3.16,1.5,1.41,1.0,1.0,0,1.0,1.0,2.5,2.45,42.5,40.91,0
+42558781ea98260a93912fed5c0e8474a7eed7e4,0,0,0,0,0,6.0,4.47,1.0,1.0,2.0,1.73,2,1.0,1.0,7.0,6.32,192.0,54.85,3
+6e68190fcb5b366f0ac1eff25250bc5b41eabd66,0,0,0,0,0,6.0,3.32,1.0,1.0,6.0,6.0,0,1.0,1.0,20.0,6.24,270.0,32.8,0
+7207b1e0b7c55cc7b0643ca7dcbdc6c96323a60b,0,0,0,0,0,2.5,2.45,1.0,1.0,1.0,1.0,0,1.0,1.0,7.5,5.1,54.0,31.3,0

@@ -1,0 +1,19 @@
+=============================================================
+======================================Project allProjects  -  Model V - Modularity, Size, and Timing Factors
+=============================================================
+[1] "Total merges =  11745 , % Clean merges =  89.96 , % Conflicting merges =  10.04"
+[1] "Total predictors before running GLM =  3 lista =  existsCommonSlice,numberOfCommitsGeoAverage,contributionConclusionDelay"
+[1] "2  predictor(s) with p-value <= 0.05 =  existsCommonSlice,numberOfCommitsGeoAverage"
+[1] "1  predictor(s) with p-value > 0.05 =  contributionConclusionDelay"
+[1] "The statistical analysis by the chi-squared test has demonstrated significant difference (p =  0 )"
+[1] "============Odds Ratio for predictors with p-value <= 0.05"
+[1] "Predictor =  existsCommonSlice , Odds Ratio =  2.83 , %Odds =  183 , p-value =  4.55747935924242e-47"
+[1] "Predictor =  numberOfCommitsGeoAverage , Odds Ratio =  2.17 , %Odds =  117 , p-value =  2.03120767480793e-100"
+[1] "============Odds Ratio for predictors with p-value > 0.05"
+[1] "Predictor =  contributionConclusionDelay , Odds Ratio =  0.98 , %Odds =  -2 , p-value =  0.445853770118804"
+[1] "==================Model fit summary"
+[1] "AIC =  6561.25"
+[1] "Deviance of the model =  6553.25"
+[1] "Deviance Explained =  14.4"
+[1] "Chi2 =  891.68"
+[1] "p-value =  0"

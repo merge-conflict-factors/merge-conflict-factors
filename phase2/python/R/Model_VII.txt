@@ -1,0 +1,20 @@
+=============================================================
+======================================Project allProjects  -  Model VII  - Modularity, Size, and Timing Factors
+=============================================================
+[1] "Total merges =  11745 , % Clean merges =  89.96 , % Conflicting merges =  10.04"
+[1] "Total predictors before running GLM =  5 lista =  existsCommonSlice,numberOfAuthorsGeoAverage,numberOfChangedLinesGeoAverage,minimumLifeTimeGeoAverage,contributionConclusionDelay"
+[1] "5  predictor(s) with p-value <= 0.05 =  existsCommonSlice,numberOfAuthorsGeoAverage,numberOfChangedLinesGeoAverage,minimumLifeTimeGeoAverage,contributionConclusionDelay"
+[1] "There are no predictors with p > 0.05"
+[1] "The statistical analysis by the chi-squared test has demonstrated significant difference (p =  0 )"
+[1] "============Odds Ratio for predictors with p-value <= 0.05"
+[1] "Predictor =  existsCommonSlice , Odds Ratio =  3.52 , %Odds =  252 , p-value =  1.64093125873786e-72"
+[1] "Predictor =  numberOfAuthorsGeoAverage , Odds Ratio =  1.44 , %Odds =  44 , p-value =  1.06168733485012e-34"
+[1] "Predictor =  numberOfChangedLinesGeoAverage , Odds Ratio =  1.49 , %Odds =  49 , p-value =  8.71169699141046e-09"
+[1] "Predictor =  minimumLifeTimeGeoAverage , Odds Ratio =  1.23 , %Odds =  23 , p-value =  9.29329944822368e-14"
+[1] "Predictor =  contributionConclusionDelay , Odds Ratio =  0.85 , %Odds =  -15 , p-value =  6.1542519668826e-05"
+[1] "==================Model fit summary"
+[1] "AIC =  6693.86"
+[1] "Deviance of the model =  6681.86"
+[1] "Deviance Explained =  12.72"
+[1] "Chi2 =  802.41"
+[1] "p-value =  0"

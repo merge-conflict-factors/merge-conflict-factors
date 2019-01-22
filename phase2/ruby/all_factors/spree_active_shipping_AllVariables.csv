@@ -1,0 +1,15 @@
+mergeCommitID, isConflicting, existsCommonSlice, totalCommonSlices, conflictingFilesNumber, conflictsNumber, numberOfCommitsArithAverage, numberOfCommitsGeoAverage, numberOfAuthorsArithAverage, numberOfAuthorsGeoAverage, delayIntegrationArithAverage, delayIntegrationGeoAverage, deltaIntegration, minimumLifeTimeArithAverage, minimumLifeTimeGeoAverage, numberOfChangedFilesArithAverage, numberOfChangedFilesGeoAverage, numberOfChangedLinesArithAverage, numberOfChangedLinesGeoAverage, contributionConclusionDelay
+c076952d2dc7de4c42b70a2385d0da86b2a5fe2a,0,0,0,0,0,2.0,1.73,1.5,1.41,20.5,6.32,39,3.5,2.45,4.5,2.83,48.5,44.83,40
+b765eaec33fa19465aac22215ac57b236a7e8330,0,1,1,0,0,7.5,3.74,4.0,2.65,2.0,1.73,2,209.0,20.42,5.5,4.9,70.0,42.0,3
+b5af3b0d5db767cae27d77c99611520126cca217,0,0,0,0,0,25.5,7.07,8.5,4.0,269.5,241.56,239,109.0,14.73,26.5,7.21,608.5,69.66,239
+4af7c2bf13b4aabd5a7080b22393b22d65f37784,1,0,0,2,3,6.5,6.48,2.5,2.45,14.0,5.2,26,47.0,45.69,10.0,8.66,65.0,59.13,27
+d17112c35bba79c64bed88efea9a3790f999d42c,0,0,0,0,0,2.0,1.73,1.0,1.0,31.0,30.94,4,2.5,2.0,6.5,3.46,38.5,12.25,4
+e4df9aa28ece0f826696b0ef84ee81a011013996,1,0,0,2,2,2.5,2.45,1.0,1.0,33.0,32.94,4,1.0,1.0,4.0,4.0,19.0,18.57,4
+d888cc8242dcc19f61e55bc37c5555a069b59e85,0,1,1,0,0,1.5,1.41,1.5,1.41,1.0,1.0,0,3.5,2.45,3.5,2.45,65.5,29.46,0
+273a660e74059c917906948d7974971e08e4ec91,0,1,1,0,0,5.5,3.16,1.5,1.41,3.5,2.45,5,6.0,3.32,7.5,3.74,37.5,21.82,6
+e0c146856c2b2967b7b1a0086052d0385ecc1b56,0,1,1,0,0,2.0,1.73,1.0,1.0,1.0,1.0,0,1.0,1.0,1.0,1.0,7.0,6.32,0
+83b3f605d5aa86cc14d13510b148661afddda1fb,0,1,1,0,0,1.5,1.41,1.0,1.0,1.0,1.0,0,1.0,1.0,1.0,1.0,11.0,8.49,1
+ae766658438d6cfc68c73f6f68d2f811a9def08a,0,0,0,0,0,2.0,2.0,1.5,1.41,1.0,1.0,0,1.0,1.0,1.0,1.0,21.0,18.47,1
+d1bd602b795be4602e13596a3f8b512c9d7541ea,0,1,1,0,0,1.5,1.41,1.5,1.41,30.5,7.75,59,30.5,7.75,1.5,1.41,13.5,9.59,60
+f7a077f6e87797f0223269994460b06816d1a235,0,0,0,0,0,2.0,1.73,1.5,1.41,24.5,6.93,47,13.5,5.1,2.0,1.73,87.5,13.19,48
+141972f0dd9d86b6d88f1f792891c7eb747c6d82,1,1,1,3,4,4.0,3.87,2.0,2.0,48.5,9.8,95,15.0,5.39,20.5,18.17,152.5,118.89,96
